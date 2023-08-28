@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:territory_name",
+ "creation": "2021-10-03 18:48:42.238058",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "section_break_2",
+  "parent_territory",
+  "territory_name",
+  "cash_on_delivery",
+  "column_break_6",
+  "territory_manager",
+  "shipping_fee",
+  "collection_fee",
+  "maximum_order_limit"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "territory_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Territory Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "cash_on_delivery",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Cash on Delivery",
+   "options": "Not Allowed\nAllowed"
+  },
+  {
+   "fieldname": "maximum_order_limit",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Maximum Order Limit"
+  },
+  {
+   "fieldname": "shipping_fee",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Shipping Fee"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "parent_territory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parent Territory",
+   "options": "Territory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "territory_manager",
+   "fieldtype": "Link",
+   "label": "Territory Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "collection_fee",
+   "fieldtype": "Currency",
+   "label": "Collection Fee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-18 20:34:32.542992",
+ "modified_by": "Administrator",
+ "module": "Customize Crm",
+ "name": "Sub Territory",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
